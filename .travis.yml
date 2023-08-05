@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Tosini13/travis-aws-react-app -f Dockerfile.dev .
+  - docker build -t tosini13/travis-aws-react-app -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Tosini13/travis-aws-react-app npm run test
+  - docker run -e CI=true tosini13/travis-aws-react-app npm run test
